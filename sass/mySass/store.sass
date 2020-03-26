@@ -1,21 +1,21 @@
+$background-color-store: #f1efea
 body 
     margin: 0
+    background: $background-color-store
     
 .store 
     display: grid
     grid-template-columns: 22% 1fr
     
-.store > div
-    background: #eeee
-    padding: 1em
 
-.store > div:nth-child(odd)
-    background: #ddd
+//.store > div:nth-child(odd)
+//    background: #ddd
 
 .store > .products
     display: grid
     grid-template-columns: repeat(6, 1fr)
     padding: 0em
+    grid-gap: .2em
 
 .store > .products img
     width: 100%
@@ -31,9 +31,41 @@ body
 
 .store > .products .item-2
     grid-column-start: 3
-    grid-column-end: 6
+    grid-column-end: 5
     grid-row-start: 1
     grid-row-end: 4
 
+.store > .products .item-3
+    grid-column-start: 5
+    grid-column-end: 7
+    grid-row-start: 1
+    grid-row-end: 4
+
+.store > .products .item-4
+    grid-column-start: 1
+    grid-column-end: 5
+    grid-row-start: 4
+    grid-row-end: 6
+
+.store > .products .item-5
+    grid-column-start: 5
+    grid-column-end: 7
+    grid-row-start: 4
+    grid-row-end: 6
+
+.store > .products .item-6
+    grid-column-start: 1
+    grid-column-end: 7
+    grid-row-start: 6
+    grid-row-end: 8
+
 .store > div:nth-child(3)
     grid-column: span 3
+
+//Menu
+
+.menu > ul > li
+    padding: 1em
+
+.menu > ul > li:hover 
+    color: yellow
