@@ -1,0 +1,12 @@
+.header .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-size: 18px;
+    z-index: 100;
+    background-color: transparent !important;
+}
+
+body {
+    background-color: #f2f2f2;
+}

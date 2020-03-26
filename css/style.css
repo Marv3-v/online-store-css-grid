@@ -1,0 +1,157 @@
+body {
+  background-color: #70A6C2;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.container div {
+  color: white;
+}
+
+.container div h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.container div h1 a:hover {
+  color: #B5797F;
+}
+
+.pasos {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+@media (max-width: 784px) {
+  .pasos {
+    grid-template-columns: 100%;
+  }
+}
+@media (min-width: 600px) {
+  .pasos {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.pasos div {
+  font-family: "Short Stack", cursive;
+  display: grid;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 784px) {
+  .pasos div {
+    height: 25vh;
+  }
+}
+@media (min-width: 600px) {
+  .pasos div {
+    height: 50vh;
+  }
+}
+
+.back {
+  position: fixed;
+  padding: 2%;
+  background-color: #e3e3e3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.n1 {
+  background-color: #BBE5FA;
+}
+
+.n2 {
+  background-color: #B5797F;
+  color: white;
+}
+
+.n3 {
+  background-color: #F7F499;
+}
+
+.watch {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100% 100%;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.item-1 img {
+  height: 400px;
+  margin-left: 10%;
+}
+
+.item-3 {
+  background-color: #e3e3e3;
+  grid-column: 1/span 3;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 40px;
+  text-align: justify;
+}
+
+@media (max-width: 784px) {
+  .watch {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+
+  .watch .items {
+    display: grid;
+    height: 100%;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-1 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .item-1 img {
+    height: 200px;
+    margin: 0;
+  }
+
+  .item-2 {
+    background-color: #F7F499;
+  }
+
+  .item-3 {
+    background-color: #e3e3e3;
+    font-size: 18px;
+    grid-column: 1;
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

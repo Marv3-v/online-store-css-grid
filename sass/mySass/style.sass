@@ -1,0 +1,135 @@
+@import sec/__pasos
+
+//paleta de colores
+$color1:#70A6C2 
+$color2:#B5797F 
+$color3:#e3e3e3 
+$color4: #F7F499
+
+body 
+    background-color: #70A6C2
+    margin: 0
+    height: 100vh
+    box-sizing: border-box
+
+a
+    text-decoration: none
+ 
+    
+.container
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    height: 100%
+    
+.container div 
+    color: white
+
+.container div h1 a 
+    text-decoration: none
+    color: white
+
+.container div h1 a:hover 
+    color: #B5797F
+
+
+//pagina pasos
+.pasos
+    display: grid
+    grid-template-rows: 50% 50%
+    @include resize-screen
+    
+
+
+.pasos div 
+    font-family: 'Short Stack', cursive
+    display: grid
+    @include resize-screen-height
+    font-size: 30px
+    align-items: center
+    text-align: center
+
+
+.back 
+    position: fixed
+    padding: 2%
+    background-color: #e3e3e3
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.n1 
+    @include back-color-items($color: #BBE5FA)
+
+.n2 
+    @include back-color-items($color: #B5797F)
+    color: white
+.n3 
+    @include back-color-items($color: #F7F499)
+
+
+//observation
+
+.watch 
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-template-rows: 100% 100%
+    align-items: center
+    text-align: center
+    height: 100vh
+
+
+.items 
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    height: 100%
+
+.item-1 img
+    height: 400px
+    margin-left: 10%
+
+.item-3
+    background-color: $color3
+    grid-column: 1 / span 3
+    padding-left: 10%
+    padding-right: 10%
+    font-size: 40px
+    text-align: justify
+
+
+@media (max-width: 784px)
+
+    .watch 
+        display: grid
+        grid-template-rows: 50% 50%
+        grid-template-columns: 100%
+
+    .watch .items 
+        display: grid
+        height: 100%
+        font-size: 30px
+        align-items: center
+        text-align: center
+    
+        
+    .item-1
+        display: flex
+        justify-content: center
+        justify-items: center
+            
+    .item-1 img
+        height: 200px
+        margin: 0
+
+    .item-2
+        background-color: $color4  
+    .item-3
+        background-color: $color3
+        font-size: 18px
+        grid-column: 1 
+        text-align: justify
+
+        

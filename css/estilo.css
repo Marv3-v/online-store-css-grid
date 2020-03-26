@@ -1,0 +1,17 @@
+#menu {
+    background-color: #F64668;
+}
+
+body {
+     background-image: url("img/note.jpg");
+    background-color: #cccccc;
+}
+
+#iniciar {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+}

@@ -1,0 +1,40 @@
+@mixin back-color-items($color)
+    background-color: $color
+
+@mixin resize-screen()
+    
+    //Si es tablet o pc
+    
+    @media (max-width: 784px)
+
+        grid-template-columns: 100%
+
+    @media (min-width: 600px) 
+
+        grid-template-columns: 50% 50%
+        
+@mixin resize-screen-height()
+    
+    //Si es tablet o pc
+    
+    @media (max-width: 784px)
+
+        height: 25vh
+        
+
+    @media (min-width: 600px) 
+
+        height: 50vh
+    
+@function pixels-random-generator()
+      @return random(100) + px
+
+@function isGreater($num1, $num2)
+    @if $num1 > $num2
+        @return $num1 * .50
+    @else 
+        @return $num2 * .50
+
+@function isColor($data)
+    @return $data/5
+    
