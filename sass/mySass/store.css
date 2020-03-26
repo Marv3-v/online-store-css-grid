@@ -2,6 +2,7 @@
   display: -ms-grid;
   display: grid;
   background: #eeee;
+  padding: 1em;
 }
 
 .store > div:nth-child(odd) {
