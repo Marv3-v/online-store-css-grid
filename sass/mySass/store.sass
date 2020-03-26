@@ -1,7 +1,39 @@
+body 
+    margin: 0
+    
 .store 
     display: grid
+    grid-template-columns: 22% 1fr
+    
+.store > div
     background: #eeee
     padding: 1em
 
 .store > div:nth-child(odd)
     background: #ddd
+
+.store > .products
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    padding: 0em
+
+.store > .products img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    
+
+.store > .products .item-1
+    grid-column-start: 1
+    grid-column-end: 3
+    grid-row-start: 1
+    grid-row-end: 4
+
+.store > .products .item-2
+    grid-column-start: 3
+    grid-column-end: 6
+    grid-row-start: 1
+    grid-row-end: 4
+
+.store > div:nth-child(3)
+    grid-column: span 3
