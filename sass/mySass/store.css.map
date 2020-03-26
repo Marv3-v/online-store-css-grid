@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;CAAG;;AAExB,AAAA,MAAM,GAAG,GAAG,AAAA,UAAW,CAAA,GAAG,EAAE;EACxB,UAAU,EAAE,IAAI;CAAG",
+    "sources": [
+        "store.sass"
+    ],
+    "names": [],
+    "file": "store.css"
+}

@@ -1,0 +1,10 @@
+.store {
+  display: -ms-grid;
+  display: grid;
+  background: #eeee;
+}
+
+.store > div:nth-child(odd) {
+  background: #ddd;
+}
+/*# sourceMappingURL=store.css.map */
